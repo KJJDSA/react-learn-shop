@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.main-bg {
+  height: 10em;
+  background-image: url("https://www.freevector.com/uploads/vector/preview/26055/Sponge-01.jpg");
+  background-size: contain;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-image {
+  padding: 0 calc(30%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  margin: 5em;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content h3 {
+  color: lightslategray;
+  font-family: 'Consolas';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content .card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.content .card-textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: whitesmoke 2px solid;
+  border-radius: 5px;
+}
+
+.content .card-title a{
+  text-decoration:none
+}
+
+.content .card-title h2{
+  color: darkslateblue;
+  font-weight: bold;
+  text-underline: none;
+}
+
+.content .card-title h2:hover {
+  color: lightslategray;
+}
+
+.content .card-content {
+  text-align: end;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 10%;
+  gap: 1em;
+}
+
+.detail-container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lavender;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.detail-container .header h2 {
+  text-align: start;
+  width: 80%;
+  font-weight: bold;
+  color: darkslateblue;
+}
+.detail-container .header span {
+  background-color: indigo;
+  color: #FFFFFF;
+  height: fit-content;
+  padding: 0.3em 1em;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.detail-container .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lavender;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.detail-container .body .img {
+  display: flex;
+  justify-content: center;
+}
+.detail-container .body .img img {
+  border-radius: 5%;
+  border: 0.5em solid #FFFFFF;
+}
+.detail-container .body .content {
+  background-color: #FFFFFF;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.detail-container .body .submit {
+  display: flex;
+  justify-content: flex-end;
+}
+.detail-container .body .submit button {
+  border: none;
+  background-color: darkslateblue;
+  color: #FFFFFF;
+  padding: 0.5em;
+  border-radius: 5px;
 }
